@@ -30,8 +30,8 @@
         <tr>
           <td><?php echo $order['Create_Date']; ?></td>
           <td><?php echo $order['type']; ?></td>
-          <td><a href="brokershareselected.php"><?php echo $order['c_code']; ?></a></td>
-          <td><a href="brokershareselected.php"><?php echo $order['c_name']; ?></a></td>
+          <td><?php echo $order['c_code']; ?></td>
+          <td><?php echo $order['c_name']; ?></td>
           <td><?php echo $order['amount']; ?></td>
           <td><?php echo $order['qty']; ?></td>
           <td><?php echo $order['amount']*$order['qty']; ?></td>
@@ -40,3 +40,8 @@
         </tbody>
       </table>
     </div>
+    <script>
+    setTimeout(function() {
+      location.reload();
+    }, 30000);
+    </script>
