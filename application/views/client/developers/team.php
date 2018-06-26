@@ -3,11 +3,9 @@
       box-sizing: border-box;
     }
 
-    
     *, *:before, *:after {
       box-sizing: inherit;
     }
-    
 
     @media screen and (max-width: 650px) {
       .column {
@@ -15,8 +13,6 @@
         display: block;
       }
     }
-    
-
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
