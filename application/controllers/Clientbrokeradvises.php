@@ -4,7 +4,6 @@
 
       if($this->session->userdata('broker','logged_in'))
       {
-
       	$data['userdata_broker'] = $this->session->userdata('broker');
           $data['gains'] = $this->Client_broker_advises_model->show_gain_data();
           $data['losses'] = $this->Client_broker_advises_model->show_loss_data();
