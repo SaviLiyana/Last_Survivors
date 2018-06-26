@@ -21,10 +21,10 @@
     public function get_transactions(){
         $sessionuser = $this->session->userdata('bank');
         $this->db->where('uid', $sessionuser['user_id']);
-        $query = $this->db->get('bankaccount');
-        $baid = $query->row()->ba_id;
+        $query = $this->db->get('brokeraccount');
+        $brid = $query->row()->br_id;
 
-        $query = $this->db->query("CALL GetTransaction($baid)");
+        $query = $this->db->query("CALL GetTransaction($brid)");
         mysqli_next_result( $this->db->conn_id );
         return $query->result_array();
     }
