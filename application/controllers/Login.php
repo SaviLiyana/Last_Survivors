@@ -1,6 +1,5 @@
 <?php
   class Login extends CI_Controller{
-
     public function view(){
       $this->load->view('admin/login/index');
     }
@@ -31,5 +30,6 @@
       $this->session->unset_userdata('admin', 'logged_in');
       redirect('admin');
     }
+    
   }
 ?>
