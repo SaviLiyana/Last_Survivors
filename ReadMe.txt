@@ -1,4 +1,4 @@
-* to deploy the application the project file should be extracted to the www folder of WAMP server.
+* to deploy the application the project file should be copied to the www folder of WAMP server.
 
 * and then the sql file should be imported to the php MyAdmin using user name 'root' and password ' ' 
 
