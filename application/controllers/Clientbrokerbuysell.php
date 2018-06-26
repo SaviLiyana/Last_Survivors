@@ -7,11 +7,9 @@
          $data['userdata'] = $this->session->userdata('broker');
          $data['bankbalance'] = $this->Order_model->show_balance();
          $data['filled_buying_orders'] = $this->Order_model->get_filled_buying_orders();
-
         $page['userdata_broker'] = $this->session->userdata('broker');
         $page['title'] = "BuySell";
         $page['turn'] = $this->Client_broker_home_model->get_current_turn();
-
          $this->load->view('client/template/header', $page);
          $this->load->view('client/broker/brokerbuysell', $data);
          $this->load->view('client/template/footer');
@@ -21,7 +19,6 @@
         redirect('loginbroker');
       }
     }
-
     public function save(){
       if($this->session->userdata('broker','logged_in'))
       {
