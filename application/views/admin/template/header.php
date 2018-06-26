@@ -57,8 +57,5 @@
     <?php if($this->session->flashdata('login_failed')) : ?>
       <?php echo '<p class="alert alert-danger text-center">'.$this->session->flashdata('login_failed').'</p>'; ?>
     <?php endif; ?>
-    <?php if($this->session->flashdata('logged_out')) : ?>
-      <?php echo '<p class="alert alert-danger text-center">'.$this->session->flashdata('logged_out').'</p>'; ?>
-    <?php endif; ?>
     <div class="pushfooter">
       <div class="container" style="background: white; min-height: 100vh;">
